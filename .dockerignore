@@ -1,0 +1,14 @@
+__pycache__
+*.py[cod]
+.pytest_cache
+.venv
+.git
+.github
+.env
+instance
+*.db
+tests
+requirements-dev.txt
+task_plan.md
+findings.md
+progress.md
