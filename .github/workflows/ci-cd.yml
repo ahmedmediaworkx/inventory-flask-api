@@ -81,7 +81,7 @@ jobs:
         run: bandit -c pyproject.toml -r app run.py
 
       - name: Scan repository for vulnerabilities, secrets, and misconfiguration
-        uses: aquasecurity/trivy-action@0.32.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           scan-type: fs
           scan-ref: .
@@ -138,7 +138,7 @@ jobs:
           cache-to: type=gha,mode=max
 
       - name: Scan image
-        uses: aquasecurity/trivy-action@0.32.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: inventory-api:scan
           format: sarif
